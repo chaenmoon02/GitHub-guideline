@@ -4,7 +4,7 @@
 
 ## I. GitHub  
 ##### 1. GitHub 이용하기  
- GitHub란, 코드 협업 플랫폼으로 개발자들이 다른 개발자들과 협업하여 관리할 수 있는 서비스입니다.  코드를 관리하고 저장소에 업로드하여 여러 사용자들과 공유할 수 있습니다. 따라서 개발 프로세스를 효율적으로 관리할 수 있습니다.
+ GitHub란, 코드 협업 플랫폼으로 개발자들이 다른 개발자들과 협업하여 관리할 수 있는 서비스입니다.  코드를 관리하고 저장소에 업로드하여 여러 사용자들과 공유할 수 있습니다. 따라서 개발 프로세스를 효율적으로 관리할 수 있습니다.  
 
 ① GitHub 홈페이지에 접속합니다. https://github.com/  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/da16c990-350c-4165-be9c-1e5628afa0a1)  
@@ -69,7 +69,7 @@ GitHub과 동일하므로 계정을 따로 생성하지 않고, 앞의 GitHub와
 
 ##### 3. GitHub Desktop을 이용하여 branch와 master 사이 수정된 소스를 pull request 요청 하는 법  
 
-예시) chaenmoon02 계정에서 임의로 chaenmoon02/Commit-Merge-TEST라는 repository를 생성했습니다.
+예시) chaenmoon02 계정에서 임의로 chaenmoon02/Commit-Merge-TEST라는 repository를 생성했습니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/39e0a30d-53b8-4124-8654-a9c5b769d178)  
 master (main) 계정은 chaenmoon02이며, collaborator는 branch moon이라는 가상의 researcher를 만들었습니다. branch moon에게 새로운 branch와 collaboraotor 자격을 주었습니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ed381e6a-136f-4c51-b6f6-3d0087a8c52e)  
@@ -100,12 +100,12 @@ main master에게 설명을 덧붙여 요청을 전송할 수 있습니다.
 
 ##### 4. Pull request 요청 수락 및 Merge 하는 방법  
 
-① main master (chaenmoon02) 시점입니다. 'Pull requests' 목록에 branch moon first commit 제목의 요청을 확인할 수 있습니다.
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/09653e05-f332-45f7-aabd-9146330808c0)  
-branch researcher에게 전송받은 전달 사항입니다.  
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/04272f0a-6d12-4865-a3be-6cf16b9f1a90)  
+① main master (chaenmoon02) 시점입니다. 'Pull requests' 목록에 branch moon first commit 제목의 요청을 확인할 수 있습니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/09653e05-f332-45f7-aabd-9146330808c0)    
+branch researcher에게 전송받은 전달 사항입니다.    
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/04272f0a-6d12-4865-a3be-6cf16b9f1a90)   
 
-② 'Merge pull request', 'Confirm merge' 순서로 클릭해줍니다.  
+② 'Merge pull request', 'Confirm merge' 순서로 클릭해줍니다.   
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/e6f6adbc-d5e7-4d9d-b28d-f27444746ee5)  
 
 정상적으로 merge 된 모습입니다.  
@@ -113,7 +113,7 @@ branch researcher에게 전송받은 전달 사항입니다.
 *왼쪽 : main master / 오른쪽 : researcher branch*  
 
 ##### 5. branch와 main merge 하는 동안 발생할 수 있는 문제 : "Merge 충돌 관리"  
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/72184b6f-98e7-4d18-b6fa-7798700e81ce)
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/72184b6f-98e7-4d18-b6fa-7798700e81ce)  
 왼쪽 작업물은 branch에서 편집한 작업물로, 제대로 merge 반영이 되어있습니다. 그러나 오른쪽 작업물인 main 작업물에서는 위의 merge가 제대로 반영이 되어 있지 않은 채로 각자 작업물이 편집되어 있는 상황입니다. 이렇게 될 경우, main과 branch, branch들 간의 merge 충돌이 일어나 더욱 복잡해질 것입니다.  
 
 ```  
@@ -132,14 +132,14 @@ second revision (master)
 아래 사진은 main branch의 Visual Studio code 작업물입니다.  
 ① 동기화를 위하여 '…', 'Terminal', 'New Terminal' 순으로 클릭합니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/0225a698-c8c7-4e73-a2c6-6dd236aa6bd8)  
-② 'git add.'을 입력합니다.
+② 'git add.'을 입력합니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/c82b68d7-cc0b-415a-ae83-fc1e15f6c636)  
 ③ 'git commit -m "second commit"'을 입력합니다.  
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ab78b59f-385e-4767-96b5-e38154c7b409)
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ab78b59f-385e-4767-96b5-e38154c7b409)  
 ④ 'git pull origin main'을 입력합니다.  
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/c8d8a5c5-2d9f-4698-8598-fe17dd80ad1b)
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/c8d8a5c5-2d9f-4698-8598-fe17dd80ad1b)  
 정상적으로 편집된 모든 과정이 업데이트됩니다.  
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/da5a3f67-e637-45b0-9639-411f8300e0a5)
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/da5a3f67-e637-45b0-9639-411f8300e0a5)  
 ⑤ 'git push origin main'을 최종적으로 입력합니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/792cd1b7-e1c0-469d-bec2-ab9312a10b9c)  
 ⑥ 앞서 언급했듯이, commit 하기 위해서 Ctrl + S 단축키 통해 저장 후, GitHub Desktop으로 돌아와 'Commit to main' 버튼과 Push origin' 버튼을 순서대로 클릭합니다.  
