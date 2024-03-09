@@ -10,6 +10,7 @@
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/da16c990-350c-4165-be9c-1e5628afa0a1)  
 
 
+
 ##### 2. GitHub에서 회원가입: 우측 상단 Sign Up 버튼을 클릭해 회원가입을 실시합니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ee737600-04fb-493c-8978-4411b78d5d0b)  
 ① 사용할 이메일을 작성합니다.  
@@ -31,8 +32,7 @@
 
 ③ 추가될 공동작업자는 GitHub 우측 상단 Notifications 및 개인 이메일로 공동작업자 초대 알림을 받을 수 있습니다.  
 
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/1fed8726-a672-4397-8e11-dc6ac5f71c24)    
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/15561d95-3eb8-47e9-9214-86786b46a208)    
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/1fed8726-a672-4397-8e11-dc6ac5f71c24) ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/15561d95-3eb8-47e9-9214-86786b46a208)    
 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/13950c3e-6dac-4e00-a641-49e15a763545)  
 *정상적으로 초대 수락이 이루어진 후 모습입니다. Repository를 확인할 수 있습니다.*    
@@ -63,7 +63,90 @@ GitHub Desktop이란, GitHub에서 제공되는 공식 데스크톱 애플리케
 ##### 2. 회원가입 및 로그인  
 GitHub과 동일하므로 계정을 따로 생성하지 않고, 앞의 GitHub와 동일하게 로그인하면 됩니다.   
 
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/fcb634ed-72c9-4d76-9719-b59b4ff4830b)    ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/3dde8200-5d03-4a92-9c97-ce9b5b81b7a5)  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/fcb634ed-72c9-4d76-9719-b59b4ff4830b) ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/3dde8200-5d03-4a92-9c97-ce9b5b81b7a5)  
+
+
+##### 3. GitHub Desktop을 이용하여 branch와 master 사이 수정된 소스를 pull request 요청 하는 법  
+
+예시) chaenmoon02 계정에서 임의로 chaenmoon02/Commit-Merge-TEST라는 repository를 생성했습니다.
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/39e0a30d-53b8-4124-8654-a9c5b769d178)  
+master (main) 계정은 chaenmoon02이며, collaborator는 branch moon이라는 가상의 researcher를 만들었습니다. branch moon에게 새로운 branch와 collaboraotor 자격을 주었습니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ed381e6a-136f-4c51-b6f6-3d0087a8c52e)  
+*어두운 모드 : main / 밝은 모드 : branch 입니다!!!*  
+
+① GitHub Desktop에 접속하여 'Clone a repository from the Internet...' 버튼을 클릭합니다. 이때, researcher 시점에서 진행됩니다. (branch moon)  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ad9381ec-a9ad-494a-94cb-eed5e3ca4aac)  
+
+② 소스를 수정할 repository 항목을 누르고 'Clone' 버튼을 클릭합니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/9cf5390f-b8c7-4d0a-81f4-aab1366c729d)  
+
+③ branch를 부여 받은 신분이므로 본인의 branch에 commit하기 위하여 상단 'Current branch'에서 branch-moon 항목을 선택한 후 'Open in Visual Studio Code'를 클릭합니다.  
+main에다가 바로 commit 해버리면 master의 원본 작업물과 공동작업자가 작성한 작업물이 꼬일 수 있기 때문입니다. 이후에 pull request를 통하여 merge 즉, 코드를 정리된 상태로 합쳐야 합니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/9085f111-e2e3-47ed-9e13-2c3f2ce76ff7)  
+
+④ branch moon 계정에서 9~12번 초록색으로 강조된 부분이 추가 및 수정된 부분입니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/f782514c-0392-4bad-aceb-376b4a9394b4)  
+
+⑤ Visual Studio Code에서 Ctrl + S 단축키를 이용하여 저장하면, 자동으로 GitHub Desktop에서 수정된 부분이 보입니다. 이후, 'Commit to **branch-moon**' 버튼을 클릭하고 'Push origin' 버튼도 클릭합니다. 이 기능을 통해 github branch로 정상적으로 commit됩니다. 저장 개념과 동일하게 볼 수 있습니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/a17f17d6-67d8-4457-9da9-329ef3384bb4)  
+
+⑥ main branch에 공동작업자가 수행한 작업물을 병합하기 위하여 Pull request 요청 보내는 과정이 필요합니다. branch moon 계정 GitHub에 자동적으로 'Compare & pull request' 버튼이 활성화됩니다. (**branch-moon** had recent pushes 2 seconds ago)  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/1c1eb084-4dc7-4529-98b7-a5d2caeb4eea)  
+main master에게 설명을 덧붙여 요청을 전송할 수 있습니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/d0cd733e-37af-461a-a067-642410be5555)  
+
+
+##### 4. Pull request 요청 수락 및 Merge 하는 방법  
+
+① main master (chaenmoon02) 시점입니다. 'Pull requests' 목록에 branch moon first commit 제목의 요청을 확인할 수 있습니다.
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/09653e05-f332-45f7-aabd-9146330808c0)  
+branch researcher에게 전송받은 전달 사항입니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/04272f0a-6d12-4865-a3be-6cf16b9f1a90)  
+
+② 'Merge pull request', 'Confirm merge' 순서로 클릭해줍니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/e6f6adbc-d5e7-4d9d-b28d-f27444746ee5)  
+
+정상적으로 merge 된 모습입니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/8931cdb7-02c8-4f0d-a77c-9d0f6b612a52)  
+*왼쪽 : main master / 오른쪽 : researcher branch*  
+
+##### 5. branch와 main merge 하는 동안 발생할 수 있는 문제 : "Merge 충돌 관리"  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/72184b6f-98e7-4d18-b6fa-7798700e81ce)
+왼쪽 작업물은 branch에서 편집한 작업물로, 제대로 merge 반영이 되어있습니다. 그러나 오른쪽 작업물인 main 작업물에서는 위의 merge가 제대로 반영이 되어 있지 않은 채로 각자 작업물이 편집되어 있는 상황입니다. 이렇게 될 경우, main과 branch, branch들 간의 merge 충돌이 일어나 더욱 복잡해질 것입니다.  
+```  
+branch moon : 바이오소재공학연구실 한경국립대학교  
+commit test  
+
+
+- - -  
+[finish practice]  
+biolab HKNU  
+second revision (master)  
+```  
+
+**따라서 작업물 동기화 과정이 필요합니다.**  
+
+아래 사진은 main branch의 Visual Studio code 작업물입니다.
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/0225a698-c8c7-4e73-a2c6-6dd236aa6bd8)  
+① 동기화를 위하여 '…', 'Terminal', 'New Terminal' 순으로 클릭합니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/fa641b2a-1957-44a7-b64c-6b21da8f839e)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## III. Visual Studio  
 Visual Studio는 Microsoft에서 개발한 통합 개발 환경입니다. 다양한 프로그래밍 언어와 플랫폼을 지원합니다.  
