@@ -9,6 +9,7 @@
 ① GitHub 홈페이지에 접속합니다. https://github.com/  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/da16c990-350c-4165-be9c-1e5628afa0a1)  
 
+- - -  
 
 
 ##### 2. GitHub에서 회원가입: 우측 상단 Sign Up 버튼을 클릭해 회원가입을 실시합니다.  
@@ -88,7 +89,8 @@ main에다가 바로 commit 해버리면 master의 원본 작업물과 공동작
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/f782514c-0392-4bad-aceb-376b4a9394b4)  
 
 ⑤ Visual Studio Code에서 Ctrl + S 단축키를 이용하여 저장하면, 자동으로 GitHub Desktop에서 수정된 부분이 보입니다. 이후, 'Commit to **branch-moon**' 버튼을 클릭하고 'Push origin' 버튼도 클릭합니다. 이 기능을 통해 github branch로 정상적으로 commit됩니다. 저장 개념과 동일하게 볼 수 있습니다.  
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/a17f17d6-67d8-4457-9da9-329ef3384bb4)  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/bfe1a723-ecba-46c1-963b-fa504170cd64)  
+ 
 
 ⑥ main branch에 공동작업자가 수행한 작업물을 병합하기 위하여 Pull request 요청 보내는 과정이 필요합니다. branch moon 계정 GitHub에 자동적으로 'Compare & pull request' 버튼이 활성화됩니다. (**branch-moon** had recent pushes 2 seconds ago)  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/1c1eb084-4dc7-4529-98b7-a5d2caeb4eea)  
@@ -113,6 +115,7 @@ branch researcher에게 전송받은 전달 사항입니다.
 ##### 5. branch와 main merge 하는 동안 발생할 수 있는 문제 : "Merge 충돌 관리"  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/72184b6f-98e7-4d18-b6fa-7798700e81ce)
 왼쪽 작업물은 branch에서 편집한 작업물로, 제대로 merge 반영이 되어있습니다. 그러나 오른쪽 작업물인 main 작업물에서는 위의 merge가 제대로 반영이 되어 있지 않은 채로 각자 작업물이 편집되어 있는 상황입니다. 이렇게 될 경우, main과 branch, branch들 간의 merge 충돌이 일어나 더욱 복잡해질 것입니다.  
+
 ```  
 branch moon : 바이오소재공학연구실 한경국립대학교  
 commit test  
@@ -126,26 +129,26 @@ second revision (master)
 
 **따라서 작업물 동기화 과정이 필요합니다.**  
 
-아래 사진은 main branch의 Visual Studio code 작업물입니다.
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/0225a698-c8c7-4e73-a2c6-6dd236aa6bd8)  
+아래 사진은 main branch의 Visual Studio code 작업물입니다.  
 ① 동기화를 위하여 '…', 'Terminal', 'New Terminal' 순으로 클릭합니다.  
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/fa641b2a-1957-44a7-b64c-6b21da8f839e)  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/0225a698-c8c7-4e73-a2c6-6dd236aa6bd8)  
+② 'git add.'을 입력합니다.
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/c82b68d7-cc0b-415a-ae83-fc1e15f6c636)  
+③ 'git commit -m "second commit"'을 입력합니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ab78b59f-385e-4767-96b5-e38154c7b409)
+④ 'git pull origin main'을 입력합니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/c8d8a5c5-2d9f-4698-8598-fe17dd80ad1b)
+정상적으로 편집된 모든 과정이 업데이트됩니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/da5a3f67-e637-45b0-9639-411f8300e0a5)
+⑤ 'git push origin main'을 최종적으로 입력합니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/792cd1b7-e1c0-469d-bec2-ab9312a10b9c)  
+⑥ 앞서 언급했듯이, commit 하기 위해서 Ctrl + S 단축키 통해 저장 후, GitHub Desktop으로 돌아와 'Commit to main' 버튼과 Push origin' 버튼을 순서대로 클릭합니다.  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/50fad73e-b7dd-4464-920f-2ad2ef86ce5d)  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**최종적으로 main과 branch 양측의 편집된 작업물이 올바르게 merge 반영 되어있는 것을 확인할 수 있습니다.**  
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/2934eec4-3541-4cd0-85af-0bddb5ef1ba5)  
+*위 : branch / 아래 : main*  
+- - -  
 
 
 ## III. Visual Studio  
