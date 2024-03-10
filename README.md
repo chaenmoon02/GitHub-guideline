@@ -68,12 +68,17 @@ GitHub과 동일하므로 계정을 따로 생성하지 않고, 앞의 GitHub와
 
 
 ##### 3. GitHub Desktop을 이용하여 branch와 master 사이 수정된 소스를 pull request 요청 하는 법  
+* commit : 'Commit'은 작업한 내용을 로컬 저장소에 저장하는 것을 말합니다. 작업한 파일의 변경 사항을 스냅샷으로 찍어서 로컬 저장소에 기록합니다.
+* push : 'Push'는 로컬 저장소에 있는 변경 사항을 원격 저장소로 전송하는 작업을 말합니다. 로컬에서 원격으로 변경 사항을 업로드하는 과정입니다.
+* pull request : 'Pull'은 원격 저장소의 변경 사항을 로컬 저장소로 가져오는 작업을 말합니다. 다른 사람이나 자신이 작업한 내용을 로컬로 가져와서 확인하고 이를 자신의 작업에 반영할 때 사용됩니다.
 
-예시) chaenmoon02 계정에서 임의로 chaenmoon02/Commit-Merge-TEST라는 repository를 생성했습니다.  
+
+
+예시) chaenmoon02/Commit-Merge-TEST라는 repository를 생성했습니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/39e0a30d-53b8-4124-8654-a9c5b769d178)  
-master (main) 계정은 chaenmoon02이며, collaborator는 branch moon이라는 가상의 researcher를 만들었습니다. branch moon에게 새로운 branch와 collaboraotor 자격을 주었습니다.  
+* master (main) 계정은 chaenmoon02이며, collaborator는 branch moon이라는 가상의 researcher를 만들었습니다. branch moon에게 새로운 branch와 collaboraotor 자격을 주었습니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ed381e6a-136f-4c51-b6f6-3d0087a8c52e)  
-*어두운 모드 : main / 밝은 모드 : branch 입니다!!!*  
+*어두운 모드 : main / 밝은 모드 : branch*    
 
 ① GitHub Desktop에 접속하여 'Clone a repository from the Internet...' 버튼을 클릭합니다. 이때, researcher 시점에서 진행됩니다. (branch moon)  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ad9381ec-a9ad-494a-94cb-eed5e3ca4aac)  
