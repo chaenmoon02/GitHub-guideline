@@ -102,6 +102,8 @@ main에다가 바로 commit 해버리면 master의 원본 작업물과 공동작
 main master에게 설명을 덧붙여 요청을 전송할 수 있습니다.  
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/d0cd733e-37af-461a-a067-642410be5555)  
 
+##### 3-1 git을 이용하여 push 기능 사용하기  
+
 
 ##### 4. Pull request 요청 수락 및 Merge 하는 방법  
 
