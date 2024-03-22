@@ -121,13 +121,16 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 1. Master 로 부터 Researcher 들이 정보를 다운로드.
 2. 이후 VS code로 Clone을 형성하여 작업.
 3. 다시 Git을 통하여 Master의 repository로 Push.
+4. 그러면 Master가 확인후 Merge하여 Master's repository에 업로드
 
 **하지만**
 <br>
 
 지금부터 설명할 새로운 방법 :  <br>
 1. Master가 열어준 Branch에서 작업.
-2. 다시 Master의 repository로 commite. <br>
+2. 작업을 마친후 Researcher's work space에서 Pull requests. 동시에 commite 및 Merge 가능.
+3. 이후 Researcher는 Master가 열어준 Branch 내에서 작업후 commite 가능.
+4. Commite후에는 Researcher's Branch에서 Master's repository로 Researcher가 Merge 가능.<br>
 <br>
 
 ### 1. Master 가 열어준 Branch에서 작업 하는 방법. 
