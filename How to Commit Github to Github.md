@@ -117,7 +117,7 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/5ad6c0d5-54ff-4e1a-9836-20e526c64350)
 <br>
 
-지금까지는,,,
+지금까지는,,, 위의 방법처럼 
 1. Master 로 부터 Researcher 들이 정보를 다운로드.
 2. 이후 VS code로 Clone을 형성하여 작업.
 3. 다시 Git을 통하여 Master의 repository로 Push.
