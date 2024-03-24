@@ -220,25 +220,20 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 
 **클릭하여 누르면 2번에 해당 페이지로 넘어감**
 
-* 2번
-![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/103c8ebf-a536-4703-96e5-ac7d962bf6cf)
-
-* 3번 - Master's repository에 Merge전 변경내용 재확인. 
+* 2번 - Master's repository에 Merge전 변경내용 재확인. 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/21062d23-816a-489c-9d09-ceee6c6e06cb)
 
-* 4번 - Master's repository로 업로드 시키는단계. 
+* 3번 - Master's repository로 업로드 시키는단계. 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/71a4e30f-6ae1-4e79-9d1f-75220cac72c9)
 
-* 5번 - Merge를 시키면서 Master's base branch에 자동 업로드.
+* 4번  - Merge를 시키면서 Master's base branch에 자동 업로드.
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/bbbb5442-4044-4f75-b548-7e05bf8a379c)
 
-* 6번 - Merge하고있는중으로 대기.
+* 5번 - Merge하고있는중으로 대기.
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/ffd9152f-2b7d-4534-bc13-914500efdc7d)
 
-* 7번 - Merge 완료
+* 6번 - Merge 완료
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/89c703cb-e054-4643-b8c3-0e152ff7d55f)
 
-* 8번 - Merge된 파일들 확인.
+* 7번 - Merge된 파일들 확인.
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/eaba6c38-fdb6-4ad5-ac32-f412e6a65ea3)
-
-
