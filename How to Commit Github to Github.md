@@ -132,4 +132,11 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 
 ### 1. Master 가 열어준 Branch에서 작업 하는 방법. 
 
+#### 1-1. Master의 Repository로 들어온 모습
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/937a3382-3cb4-4478-8484-9fca132eae0e) <br>
+
+#### 1-2. Master의 Repository 내의 Researcher's branch로 들어가 Researcher가 작업할 workspace가 있는 해당 파일까지 찾은 모습
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/6797b662-c52e-419f-bbdb-952e037c3162)
+
+#### 1-3. 
 
