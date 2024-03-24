@@ -110,29 +110,148 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/af4619d4-f331-472b-9d0e-1d0ff612e92e)  ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ad0e88c7-b282-4441-82bb-c07a48c3dce1)  
 
-## II. Commite in Github to Github 
+## II. Commite Github to Github 
 
 ### 1. Summarize how to commite
 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/5ad6c0d5-54ff-4e1a-9836-20e526c64350)
 <br>
 
+
+지금까지는,,,
+```
+1. Master가 Researcher들에게 Branch를 부여
+2. Researcher들은 Github Desktop으로 본인들의 Local에 Clone을 미리 형성
+3. Researcher들은 Master's repository로 부터 해당 정보들을 Researcher들 Local에 다운로드.
+4. 다운로드된 정보들을 VS code에서 편집
+5. 편집된 Code들을 다시 Researcher's branch로 Commit (이때 Git을 사용하여 Push하기도 한다.)
+6. 이후 Master's repository로 Merge시키면서 업로드 완료.
+```
+<br>
+
 지금까지는,,, 위의 방법처럼 
+```
 1. Master 로 부터 Researcher 들이 정보를 다운로드.
 2. 이후 VS code로 Clone을 형성하여 작업.
 3. 다시 Git을 통하여 Master의 repository로 Push.
 4. 그러면 Master가 확인후 Merge하여 Master's repository에 업로드
-
+```
 **하지만**
 <br>
 
 지금부터 설명할 새로운 방법 :  <br>
+
+```
+1. Master가 Researcher들에게 Branch를 부여 
+2. Master가 Repository에 올린 해당 파일이 같이 researcher들의 branch에 같이 넘어옴
+3. Researcher들은 해당 Branch에서 바로 작업
+4. 작업이후 다시 Master의 repository로 commit
+5. Commit 이후 Master's repository로 바로 Merge 시키면서 업로드 완료. 
+```
+
+* **해당방법은 Master와 Researcher들 간에 사전에 Invitation으로 Collaborate 진행이 이뤄져 있음을 Base에 두고 정리한 방법임을 유의할것.** <br>
+<br>
+
+```
 1. Master가 열어준 Branch에서 작업.
 2. 작업을 마친후 Researcher's work space에서 Pull requests. 동시에 commite 및 Merge 가능.
 3. 이후 Researcher는 Master가 열어준 Branch 내에서 작업후 commite 가능.
 4. Commite후에는 Researcher's Branch에서 Master's repository로 Researcher가 Merge 가능.<br>
+```
 <br>
 
 ### 1. Master 가 열어준 Branch에서 작업 하는 방법. 
+
+#### 1-1. Master의 Repository로 들어온 모습
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/937a3382-3cb4-4478-8484-9fca132eae0e) <br>
+
+#### 1-2. Master의 Repository 내의 Researcher's branch로 들어가 Researcher가 작업할 workspace가 있는 해당 파일까지 찾은 모습
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/6797b662-c52e-419f-bbdb-952e037c3162)
+
+#### 1-3. Workspace가 있는 해당 Branch 내의 파일로 들어간 모습 
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/78dbbe06-70f8-4e36-b38a-d0c825247c51)
+
+#### 1-3-1. 직접 editing이 가능한 창으로 넘어간 모습
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/d236d2c5-cd44-452b-ab57-f2111d0a8cf1)
+<br>
+
+* 해당 순서에 맞게 진행하면 Master's repository 내의 Researcher's Branch에서 Direct 작업이 가능하다.
+  추가로, Preview 기능도 있어서 Code 정리도중 중간점검 겸 업로드 후의 파일이 어떻게 보이는지도 볼수 있다.
+* Mater 가 열어준 Branch에 Master가 생성한 파일이 같이 넘어오지만, Researcher가 해당 업무 관련하여 Researcher's Local에서 작업한게 있을수 있다.
+  그럴때는 파일을 형성 혹은 업로드를 시켜야한다.
+  
+### 2. Researcher's Branch에 파일 생성 하기.
+
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/124105c2-4d66-4131-9c55-e4b99f541c08)
+
+#### 2-1. 파일 업로드.
+
+* 1번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/d76baae7-e866-4f47-b54b-feb4fa642f65)
+
+* 2번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/9a3a90cf-1b05-45dd-8b3f-39b8d2fd199c)
+
+#### 2-1-1. 이미 파일이 생성되어 있는 상태에서의 Commit
+
+* 1번 
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/d45f5ba5-c3e4-40cc-ad76-0065d2dd9b28)
+
+* 2번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/348add59-2426-4c19-b435-f47f664a8f9c)
+
+**따라서 지금은 Saving 및 Commit이 목적이므로 Commit changes,, 를 클릭.**
+* 연구자는 Master와 Collaborate이 진행되어져있고, Branch를 얻었다면,2-1-1의 순서만 반복해서 작업을 완료할수 있다. <br>
+  * 2번까지 하면 자동으로 Researcher's Branch에 자동 저장 되기 때문.
+
+
+#### 2-1-2. 새로운 파일을 만들때의 Commit 방법.
+
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/11f9d80d-69cb-4e71-a791-285c74f9bef8)
+
+* 여기서 2번 Create new file을 선택.
+
+#### 2-2. Create New File
+
+* 새 파일을 생성하는 방법
+* 1번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/6aa1d6b8-7b6b-4aba-bb9b-e49d21b34da3)
+
+* 2번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/5337bb95-9512-40e4-9e57-9c909d6238a4)
+
+* 3번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/9e3984fe-dc85-4ec0-8f5c-e0ab14512d07)
+
+* 4번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/95c45d2e-3deb-4e79-b74d-b762aacbf801)
+
+#### 3. 생성한 내용 Master's Repository로 Merge 및 업로드 시키기
+
+* 1번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/6fa49810-784d-4770-81a9-b6e702b6c23d)
+
+**클릭하여 누르면 2번에 해당 페이지로 넘어감**
+
+* 2번
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/103c8ebf-a536-4703-96e5-ac7d962bf6cf)
+
+* 3번 - Master's repository에 Merge전 변경내용 재확인. 
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/21062d23-816a-489c-9d09-ceee6c6e06cb)
+
+* 4번 - Master's repository로 업로드 시키는단계. 
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/71a4e30f-6ae1-4e79-9d1f-75220cac72c9)
+
+* 5번 - Merge를 시키면서 Master's base branch에 자동 업로드.
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/bbbb5442-4044-4f75-b548-7e05bf8a379c)
+
+* 6번 - Merge하고있는중으로 대기.
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/ffd9152f-2b7d-4534-bc13-914500efdc7d)
+
+* 7번 - Merge 완료
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/89c703cb-e054-4643-b8c3-0e152ff7d55f)
+
+* 8번 - Merge된 파일들 확인.
+![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320727/eaba6c38-fdb6-4ad5-ac32-f412e6a65ea3)
 
 
