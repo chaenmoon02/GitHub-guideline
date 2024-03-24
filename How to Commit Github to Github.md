@@ -117,6 +117,7 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/5ad6c0d5-54ff-4e1a-9836-20e526c64350)
 <br>
 
+
 지금까지는,,,
 ```
 1. Master가 Researcher들에게 Branch를 부여
@@ -126,10 +127,20 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 5. 편집된 Code들을 다시 Researcher's branch로 Commit (이때 Git을 사용하여 Push하기도 한다.)
 6. 이후 Master's repository로 Merge시키면서 업로드 완료.
 ```
+<br>
+
+지금까지는,,, 위의 방법처럼 
+```
+1. Master 로 부터 Researcher 들이 정보를 다운로드.
+2. 이후 VS code로 Clone을 형성하여 작업.
+3. 다시 Git을 통하여 Master의 repository로 Push.
+4. 그러면 Master가 확인후 Merge하여 Master's repository에 업로드
+```
 **하지만**
 <br>
 
 지금부터 설명할 새로운 방법 :  <br>
+
 ```
 1. Master가 Researcher들에게 Branch를 부여 
 2. Master가 Repository에 올린 해당 파일이 같이 researcher들의 branch에 같이 넘어옴
@@ -137,7 +148,16 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 4. 작업이후 다시 Master의 repository로 commit
 5. Commit 이후 Master's repository로 바로 Merge 시키면서 업로드 완료. 
 ```
+
 * **해당방법은 Master와 Researcher들 간에 사전에 Invitation으로 Collaborate 진행이 이뤄져 있음을 Base에 두고 정리한 방법임을 유의할것.** <br>
+<br>
+
+```
+1. Master가 열어준 Branch에서 작업.
+2. 작업을 마친후 Researcher's work space에서 Pull requests. 동시에 commite 및 Merge 가능.
+3. 이후 Researcher는 Master가 열어준 Branch 내에서 작업후 commite 가능.
+4. Commite후에는 Researcher's Branch에서 Master's repository로 Researcher가 Merge 가능.<br>
+```
 <br>
 
 ### 1. Master 가 열어준 Branch에서 작업 하는 방법. 
