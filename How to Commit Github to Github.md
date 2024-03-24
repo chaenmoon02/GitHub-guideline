@@ -123,13 +123,13 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 1. Master가 Researcher들에게 Branch를 부여
 2. Researcher들은 Github Desktop으로 본인들의 Local에 Clone을 미리 형성
 3. Researcher들은 Master's repository로 부터 해당 정보들을 Researcher들 Local에 다운로드.
-4. 다운로드된 정보들을 VS code에서 편집
+4. 다운로드된 정보들을 VS code에서 편집 - VS code로 불러와야하며, 연구자의 컴퓨터 Local에 VS code가 없으면 설치해야함.
 5. 편집된 Code들을 다시 Researcher's branch로 Commit (이때 Git을 사용하여 Push하기도 한다.)
 6. 이후 Master's repository로 Merge시키면서 업로드 완료.
 ```
 <br>
 
-```
+
 **하지만**
 <br>
 
