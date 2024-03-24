@@ -110,24 +110,31 @@ Windows Subsystem for Linux의 약자로, Microsoft Windows 운영 체제에서 
 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/af4619d4-f331-472b-9d0e-1d0ff612e92e)  ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/ad0e88c7-b282-4441-82bb-c07a48c3dce1)  
 
-## II. Commite in Github to Github 
+## II. Commite Github to Github 
 
 ### 1. Summarize how to commite
 
 ![image](https://github.com/chaenmoon02/GitHub-guideline/assets/145320578/5ad6c0d5-54ff-4e1a-9836-20e526c64350)
 <br>
+**해당방법은 Master와 Researcher들 간에 사전에 Invitation으로 Collaborate 진행이 이뤄져 있음을 Base에 두고 정리한 방법임을 유의할것.**
 
 지금까지는,,,
-1. Master 로 부터 Researcher 들이 정보를 다운로드.
-2. 이후 VS code로 Clone을 형성하여 작업.
-3. 다시 Git을 통하여 Master의 repository로 Push.
+1. Master가 Researcher들에게 Branch를 부여
+2. Researcher들은 Github Desktop으로 본인들의 Local에 Clone을 미리 형성
+3. Researcher들은 Master's repository로 부터 해당 정보들을 Researcher들 Local에 다운로드.
+4. 다운로드된 정보들을 VS code에서 편집
+5. 편집된 Code들을 다시 Researcher's branch로 Commit (이때 Git을 사용하여 Push하기도 한다.)
+6. 이후 Master's repository로 Merge시키면서 업로드 완료.
 
 **하지만**
 <br>
 
+**해당방법은 Master와 Researcher들 간에 사전에 Invitation으로 Collaborate 진행이 이뤄져 있음을 Base에 두고 정리한 방법임을 유의할것.**
 지금부터 설명할 새로운 방법 :  <br>
-1. Master가 열어준 Branch에서 작업.
-2. 다시 Master의 repository로 commite. <br>
+1. Master가 Researcher들에게 Branch를 부여 
+2. Master가 Repository에 올린 해당 파일이 같이 researcher들의 branch에 같이 넘어옴.
+3. 
+4. 다시 Master의 repository로 commite. <br>
 <br>
 
 ### 1. Master 가 열어준 Branch에서 작업 하는 방법. 
